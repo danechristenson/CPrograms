@@ -18,7 +18,7 @@
     <ClCompile Include="Fahrenheit-Celsius table.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Celsius-Fahrenheit.cpp">
+    <ClCompile Include="Celsius-Fahrenheit.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

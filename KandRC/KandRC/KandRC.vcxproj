@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Celsius-Fahrenheit.cpp" />
+    <ClCompile Include="Celsius-Fahrenheit.c" />
     <ClCompile Include="Fahrenheit-Celsius table.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
