@@ -3,22 +3,14 @@
 /* print Fahrenheit-Celsius table
 	for fahr = 0, 20, ..., 300 */
 
-int fToC()
+int main()
 {
-	float fahr, celsius;
-	float lower, upper, step;
+	int fahr;
 
-	lower = 0;
-	upper = 300;
-	step = 20;
-
-	fahr = lower;
 	printf("Fahrenheit\tCelsius\n");
-	while (fahr <= upper)
+	for (fahr = 300; fahr >= 0; fahr -= 20)
 	{
-		celsius = 5 * (fahr - 32) / 9;
-		printf("%11.0f\t%6.1f\n", fahr, celsius);
-		fahr = fahr + step;
+		printf("%6.1d\t\t %6.1f\n", fahr, (5.0 / 9.0) * (fahr - 32));
 	}
 	return 0;
 }

@@ -3,7 +3,7 @@
 /* converts celsius to Fahrenheit
 	and prints a table */
 
-int main()
+int cToF()
 {
 	float fahr, celsius;
 	float upper, lower, step;
