@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* copy input to output; v2 */
-main()
+inOut()
 {
 	int c;
 
