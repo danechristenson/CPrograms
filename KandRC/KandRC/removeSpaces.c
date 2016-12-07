@@ -8,7 +8,7 @@ int main(void)
 
 	cc = 0;
 
-	while ((c = getchar()) != 0)
+	while ((c = getchar()) != '0')
 	{
 		if (c == ' ')
 		{

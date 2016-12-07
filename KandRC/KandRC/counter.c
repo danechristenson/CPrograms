@@ -6,7 +6,7 @@ int counter(void)
 	nl = 0;
 	blk = 0;
 	tab = 0;
-	while ((c = getchar()) != 0)
+	while ((c = getchar()) != '0')
 	{
 		if (c == '\n')
 			++nl;
@@ -18,4 +18,6 @@ int counter(void)
 
 	printf("Newline\tTabs\tSpaces\n");
 	printf("%6d\t%4d\t%4d\n", nl, tab, blk);
+	getchar();
+	return 0;
 }

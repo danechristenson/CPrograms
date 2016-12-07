@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 /* copy input to output; v2 */
-inOut()
+inOutCopy()
 {
 	int c;
 
-	while ((c = getchar()) != EOF)
+	while ((c = getchar()) != '0')
 	{
 		putchar(c);
-		putchar(getchar() != EOF);
-		putchar(EOF);
+		printf("Value is %d\n", getchar() != EOF);
+		printf("The value of EOF is %d\n", EOF);
 	}
-
-	getchar();
 }
