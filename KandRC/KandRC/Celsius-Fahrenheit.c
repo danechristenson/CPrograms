@@ -1,20 +1,17 @@
 #include <stdio.h>
-
+#define LOWER -40
+#define UPPER 200
+#define STEP 20
 /* converts celsius to Fahrenheit
 	and prints a table */
 
-int cToF()
+void cToF()
 {
 	float fahr, celsius;
-	float upper, lower, step;
 
-	lower = -40;
-	upper = 200;
-	step = 20;
-
-	celsius = lower;
+	celsius = LOWER;
 	printf("Celsius\tFahrenheit\n");
-	for (celsius = lower; celsius <= upper; celsius += step)
+	for (celsius = LOWER; celsius <= UPPER; celsius += STEP)
 	{
 		fahr = (celsius * 9 / 5) + 32;
 		printf("%5.0f\t%6.0f\n", celsius, fahr);
