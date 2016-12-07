@@ -114,6 +114,7 @@
     <ClCompile Include="counter.c" />
     <ClCompile Include="Fahrenheit-Celsius table.c" />
     <ClCompile Include="inputOutputCopy.c" />
+    <ClCompile Include="removeSpaces.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

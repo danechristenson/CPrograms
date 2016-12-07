@@ -1,12 +1,12 @@
 #include<stdio.h>
 
-int main(void)
+int counter(void)
 {
 	int c, nl, blk, tab;
 	nl = 0;
 	blk = 0;
 	tab = 0;
-	while ((c = getchar()) != EOF)
+	while ((c = getchar()) != 0)
 	{
 		if (c == '\n')
 			++nl;
