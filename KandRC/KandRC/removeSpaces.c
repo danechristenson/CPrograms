@@ -2,7 +2,7 @@
 
 /* remove any double spaces */
 
-int main(void)
+int spaces(void)
 {
 	int c, lastIn;
 

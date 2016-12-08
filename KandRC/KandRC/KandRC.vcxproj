@@ -110,6 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1.1 replaceThem.c" />
     <ClCompile Include="Celsius-Fahrenheit.c" />
     <ClCompile Include="counter.c" />
     <ClCompile Include="Fahrenheit-Celsius table.c" />
