@@ -4,27 +4,26 @@
 
 int main(void)
 {
-	int c, cc;
+	int c, lastIn;
 
-	cc = 0;
+	lastIn = 0;
 
 	while ((c = getchar()) != '0')
 	{
 		if (c == ' ')
 		{
-			if (cc == ' ')
+			if (lastIn == 0)
 			{
-				//throw away line
-				cc = 0;
-			}
-			else
-			{
-				cc = c;
+				lastIn = 1;
 				putchar(c);
-			}
 
+			}
 		}
 		else
+		{
+			lastIn = 0;
 			putchar(c);
+		}
 	}
+	return 0;
 }
