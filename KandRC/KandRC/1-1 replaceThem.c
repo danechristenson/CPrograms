@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int replace(void)
 {
 	int c;
 	while ((c = getchar()) != '0')
