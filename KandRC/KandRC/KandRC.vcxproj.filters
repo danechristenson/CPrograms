@@ -39,5 +39,8 @@
     <ClCompile Include="1-12OneWord.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1-13.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
