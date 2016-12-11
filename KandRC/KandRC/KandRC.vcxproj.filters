@@ -42,5 +42,14 @@
     <ClCompile Include="1-13histogram.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="power.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="longestline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1-15_temp_func.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

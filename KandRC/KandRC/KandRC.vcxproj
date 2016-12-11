@@ -114,10 +114,13 @@
     <ClCompile Include="1-12OneWord.c" />
     <ClCompile Include="1-1 replaceThem.c" />
     <ClCompile Include="1-13histogram.c" />
+    <ClCompile Include="1-15_temp_func.c" />
     <ClCompile Include="Celsius-Fahrenheit.c" />
     <ClCompile Include="counter.c" />
     <ClCompile Include="Fahrenheit-Celsius table.c" />
     <ClCompile Include="inputOutputCopy.c" />
+    <ClCompile Include="longestline.c" />
+    <ClCompile Include="power.c" />
     <ClCompile Include="removeSpaces.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
