@@ -7,7 +7,7 @@ and prints a table */
 
 void convertToFahr(float c);
 
-void main()
+void convert()
 {
 	float celsius;
 

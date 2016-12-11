@@ -45,10 +45,10 @@
     <ClCompile Include="power.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="longestline.c">
+    <ClCompile Include="1-15_temp_func.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="1-15_temp_func.c">
+    <ClCompile Include="1-19_longestline.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

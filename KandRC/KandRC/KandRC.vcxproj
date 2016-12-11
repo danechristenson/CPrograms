@@ -119,7 +119,7 @@
     <ClCompile Include="counter.c" />
     <ClCompile Include="Fahrenheit-Celsius table.c" />
     <ClCompile Include="inputOutputCopy.c" />
-    <ClCompile Include="longestline.c" />
+    <ClCompile Include="1-19_longestline.c" />
     <ClCompile Include="power.c" />
     <ClCompile Include="removeSpaces.c" />
   </ItemGroup>
