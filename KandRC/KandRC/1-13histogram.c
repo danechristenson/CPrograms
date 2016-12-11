@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /* count digits, white space, others */
-main()
+histogram()
 {
-	int c, i, nwhite, nother;
+	int c, i, j, nwhite, nother;
 	int ndigit[10];
 
 	nwhite = nother = 0;
@@ -24,4 +24,29 @@ main()
 		printf(" %d", ndigit[i]);
 	printf(", whitespace = %d, other = %d\n",
 		nwhite, nother);
+
+	printf("number ");
+	for (i = 0; i < 10; ++i)
+	{
+		printf("%d: ", i);
+		for (j = 0; j < ndigit[i]; ++j)
+		{
+			putchar('+');
+		}
+		putchar('\n');
+	}
+
+	printf("whitespace: ");
+	for (i = 0; i < nwhite; ++i)
+	{
+		putchar('+');
+	}
+
+	printf("\nothers: ");
+	for (i = 0; i < nother; ++i)
+	{
+		putchar('+');
+	}
+	getchar();
+	getchar();
 }

@@ -113,7 +113,7 @@
     <ClCompile Include="1-11countLinesWordChar.c" />
     <ClCompile Include="1-12OneWord.c" />
     <ClCompile Include="1-1 replaceThem.c" />
-    <ClCompile Include="1-13.c" />
+    <ClCompile Include="1-13histogram.c" />
     <ClCompile Include="Celsius-Fahrenheit.c" />
     <ClCompile Include="counter.c" />
     <ClCompile Include="Fahrenheit-Celsius table.c" />

@@ -39,7 +39,7 @@
     <ClCompile Include="1-12OneWord.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="1-13.c">
+    <ClCompile Include="1-13histogram.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
