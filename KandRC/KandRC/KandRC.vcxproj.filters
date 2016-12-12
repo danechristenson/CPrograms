@@ -51,5 +51,8 @@
     <ClCompile Include="1-19_longestline.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1-20_detab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,13 +1,13 @@
 #include <stdio.h>
 #define MAXLINE 1000 /* maximum input line length */
 
-int getline(char line[], int maxline);
-void copy(char to[], char from[]);
+int getlineO(char line[], int maxline);
+void copyO(char to[], char from[]);
 void reverse(char string[]);
 void discardNewLine(char string[]);
 
 /* print the longest input line */
-main()
+longline()
 {
 	int len; // current line length
 	int max; // max length seen
@@ -15,12 +15,12 @@ main()
 	char longest[MAXLINE]; // longest line saved here
 
 	max = 0;
-	while ((len = getline(line, MAXLINE)) > 0)
+	while ((len = getlineO(line, MAXLINE)) > 0)
 
 		if (len > max)
 		{
 			max = len;
-			reverse(longest, line);
+			reverse(longest);
 
 		}
 	if (max > 0) // there was a line
@@ -32,7 +32,7 @@ main()
 }
 
 // getline: read a line into s, return length
-int getline(char s[], int lim)
+int getlineO(char s[], int lim)
 {
 	int c, i;
 
@@ -49,7 +49,7 @@ int getline(char s[], int lim)
 }
 
 // copy: copy 'from' into 'to; assume to is large enough
-void copy(char to[], char from[])
+void copyO(char to[], char from[])
 {
 	int i;
 
