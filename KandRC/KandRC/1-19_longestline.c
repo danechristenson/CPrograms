@@ -4,6 +4,7 @@
 int getline(char line[], int maxline);
 void copy(char to[], char from[]);
 void reverse(char string[]);
+void discardNewLine(char string[]);
 
 /* print the longest input line */
 main()
@@ -72,5 +73,18 @@ void reverse(char string[])
 		string[i] = string[j];
 		string[j] = temp;
 		--j;
+	}
+}
+
+void discardNewLine(char string[])
+{
+	int i;
+
+	for (i = 0; string[i] != '\0'; i++)
+	{
+		if (string[i] == '\n')
+		{
+			string[i] = '\0';
+		}
 	}
 }
