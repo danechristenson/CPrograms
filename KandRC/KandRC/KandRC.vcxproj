@@ -111,12 +111,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1-11countLinesWordChar.c" />
-    <ClCompile Include="1-12OneWord.c" />
-    <ClCompile Include="1-1 replaceThem.c" />
     <ClCompile Include="1-13histogram.c" />
     <ClCompile Include="1-15_temp_func.c" />
     <ClCompile Include="1-20_detab.c" />
-    <ClCompile Include="Celsius-Fahrenheit.c" />
     <ClCompile Include="counter.c" />
     <ClCompile Include="Fahrenheit-Celsius table.c" />
     <ClCompile Include="inputOutputCopy.c" />

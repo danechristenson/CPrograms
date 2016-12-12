@@ -18,9 +18,6 @@
     <ClCompile Include="Fahrenheit-Celsius table.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Celsius-Fahrenheit.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="inputOutputCopy.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -31,12 +28,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="1-11countLinesWordChar.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="1-1 replaceThem.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="1-12OneWord.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="1-13histogram.c">
