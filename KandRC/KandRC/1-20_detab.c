@@ -14,31 +14,39 @@ int calculateSpaces(int offset, int tabSize);
 int main()
 {
 	int tabSize = 4;
-	int i, j ,offset, spaces;
+	int i, j, offset, spaces, count;
 
 	spaces = 0;
-	
+	count = 0;
+
 	while (getline() > 0)
 	{
-		for  (i = 0, offset = 0; line[i] != '\0'; i++)
+		for (i = 0, offset = 0; line[i] != '\0'; i++, count++)
 		{
 			if (line[i] == TAB)
 			{
 				spaces = calculateSpaces(offset, tabSize);
-				for ( j = 0; j < spaces; j++)
+				for (j = 0; j < spaces; j++)
 				{
 					putchar(SPACE);
 					offset++;
 				}
+			}
+			else if(count > 80 && line[i] == SPACE)
+			{
+				putchar('\n');
+				count = 0;
+				offset++;
 			}
 			else
 			{
 				putchar(line[i]);
 				offset++;
 			}
+
 		}
 	}
-		
+
 	getchar();
 	getchar();
 	return 0;
