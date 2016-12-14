@@ -75,3 +75,23 @@ int calculateSpaces(int offset, int TabSize)
 {
 	return TabSize - (offset % TabSize);
 }
+
+int removeComments(void)
+{
+	int c, i;
+	extern char line[];
+
+	while (getline() > 0)
+	{
+		for (i = 0; line[i] != '\0'; i++)
+		{
+			if (line[i] == '/' && line[i + 1] == '*')
+			{
+				while (line[i] != '*' && line[i + 1] != '/')
+				{
+					i++;
+				}
+			}
+		}
+	}
+}
