@@ -11,7 +11,7 @@ int getline(void);
 int calculateSpaces(int offset, int tabSize);
 
 // print longest input line, specialized version
-int main()
+int detab()
 {
 	int tabSize = 4;
 	int i, j, offset, spaces, count;
@@ -78,7 +78,7 @@ int calculateSpaces(int offset, int TabSize)
 
 int removeComments(void)
 {
-	int c, i;
+	int i;
 	extern char line[];
 
 	while (getline() > 0)
@@ -94,4 +94,7 @@ int removeComments(void)
 			}
 		}
 	}
+	return i;
 }
+
+// TODO(dane): add  exercise 1-24
