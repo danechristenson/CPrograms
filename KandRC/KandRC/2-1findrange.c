@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-main()
+findRange()
 {
 	//chars
 	printf("Number of bits in a char: %d\n\n", CHAR_BIT);

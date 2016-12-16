@@ -115,6 +115,7 @@
     <ClCompile Include="1-15_temp_func.c" />
     <ClCompile Include="1-20_detab.c" />
     <ClCompile Include="2-1findrange.c" />
+    <ClCompile Include="2-2.c" />
     <ClCompile Include="counter.c" />
     <ClCompile Include="Fahrenheit-Celsius table.c" />
     <ClCompile Include="inputOutputCopy.c" />
