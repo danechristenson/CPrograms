@@ -13,41 +13,8 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Chapter 1 Exercises">
-      <UniqueIdentifier>{beb3f957-0889-4e22-a625-6976490f7ff7}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1-11countLinesWordChar.c">
-      <Filter>Source Files\Chapter 1 Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="1-13histogram.c">
-      <Filter>Source Files\Chapter 1 Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="1-15_temp_func.c">
-      <Filter>Source Files\Chapter 1 Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="1-19_longestline.c">
-      <Filter>Source Files\Chapter 1 Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="1-20_detab.c">
-      <Filter>Source Files\Chapter 1 Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="counter.c">
-      <Filter>Source Files\Chapter 1 Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="Fahrenheit-Celsius table.c">
-      <Filter>Source Files\Chapter 1 Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="inputOutputCopy.c">
-      <Filter>Source Files\Chapter 1 Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="power.c">
-      <Filter>Source Files\Chapter 1 Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="removeSpaces.c">
-      <Filter>Source Files\Chapter 1 Exercises</Filter>
-    </ClCompile>
     <ClCompile Include="2-1findrange.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -55,6 +22,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="atoi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2-4_delete duplicates.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

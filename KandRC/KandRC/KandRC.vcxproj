@@ -110,19 +110,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1-11countLinesWordChar.c" />
-    <ClCompile Include="1-13histogram.c" />
-    <ClCompile Include="1-15_temp_func.c" />
-    <ClCompile Include="1-20_detab.c" />
     <ClCompile Include="2-1findrange.c" />
     <ClCompile Include="2-2.c" />
+    <ClCompile Include="2-4_delete duplicates.c" />
     <ClCompile Include="atoi.c" />
-    <ClCompile Include="counter.c" />
-    <ClCompile Include="Fahrenheit-Celsius table.c" />
-    <ClCompile Include="inputOutputCopy.c" />
-    <ClCompile Include="1-19_longestline.c" />
-    <ClCompile Include="power.c" />
-    <ClCompile Include="removeSpaces.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
