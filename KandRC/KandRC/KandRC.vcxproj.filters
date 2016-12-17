@@ -54,5 +54,8 @@
     <ClCompile Include="2-2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="atoi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

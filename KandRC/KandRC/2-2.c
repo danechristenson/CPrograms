@@ -2,7 +2,7 @@
 
 #define STRINGSIZE 100
 
-main()
+forStatement()
 {
 	int i = 0;
 	int lim = 10;
