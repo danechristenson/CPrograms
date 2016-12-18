@@ -113,6 +113,7 @@
     <ClCompile Include="2-1findrange.c" />
     <ClCompile Include="2-2.c" />
     <ClCompile Include="2-4_delete duplicates.c" />
+    <ClCompile Include="2-5.c" />
     <ClCompile Include="atoi.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

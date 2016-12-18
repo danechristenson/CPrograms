@@ -32,8 +32,3 @@ void strcat(char s[], char t[])
 	while ((s[i++] = t[j++]) != '\0') /* copy t */
 		;
 }
-
-int main()
-{
-	return 0;
-}
