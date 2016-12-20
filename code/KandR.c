@@ -1,7 +1,14 @@
 #include <stdio.h>
 
-int main(){
-    printf("Changed");
+int main()
+{
+      int n = 1 << 9;
+    
+    printf("AND\t%d\t%d\n", n, (n & 0177));
+    printf("OR\t%d\t%d\n", n, (n | 0177));
+    printf("Left\t%d\t%d\n", n, (n << 7));
+    printf("Right\t%d\t%d\n", n, (n >>7));
+    printf("~\t%d\t%d\n", n, (~n));
     getchar();
     return 0;
 }
