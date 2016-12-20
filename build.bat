@@ -2,5 +2,5 @@
 
 mkdir ..\..\build
 pushd ..\..\build
-cl -FC -Zi ..\..\CPrograms\code\KandR.c
+cl -FC -Zi ..\Cprograms\code\KandR.c
 popd

@@ -2,25 +2,27 @@
 
 int main()
 {
-      int n = 1 << 9;
+      
+}
+
+/* bit count: count 1 bits in x */
+int bitcount (unsigned x) 
+{
+    int b;
     
-    printf("AND\t%d\t%d\n", n, (n & 0177));
-    printf("OR\t%d\t%d\n", n, (n | 0177));
-    printf("Left\t%d\t%d\n", n, (n << 7));
-    printf("Right\t%d\t%d\n", n, (n >>7));
-    printf("~\t%d\t%d\n", n, (~n));
-    getchar();
-    return 0;
+    for (b = 0; x != 0; x >>= 1)
+        if(x & 01)
+        b++;
+    return b;
 }
 
-/* getbits: get n bits from position p */
-unsigned getbits(unsigned x, int p, int n)
+/* bitcountFast: count 1 bits in x */
+int bitbcountFast(unsigned x)
 {
-    return (x  >> (p + 1 - n)) & ~(~0 << n );
-}
-
-/* setbits: return x with n bits at position p */
-unsigned setbits(unsigned x, int p, int n)
-{
-    return( x >> (p + 1 - n)) & ~(~0 << n);
+    int b;
+    
+    for( b = 0; x != 0; x >>= 1)
+        if (x & 01)
+        b++;
+    return b;
 }
