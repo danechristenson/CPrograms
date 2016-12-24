@@ -1,22 +1,27 @@
 #include <stdio.h>
-
-void lower(char s[]);
-
-int main()
+               
+main()
 {
-    char s[] = "HelLo WorlD!";
-    lower(s);
-    printf("%s\n", s);
-    return 0;
-}
-     
-/* returns characters as lowercase */
-void lower(char s[]) 
-{
-    int i;
     
-    for ( i = 0; s[i] != '\0'; i++)
-    {
-        (s[i] >= 'A' && s[i] <= 'Z') ? s[i] += 'a' - 'A'  : s[i];
+}
+
+
+    // binsearch: find x in v[0] <= v[1] <= ... <= v[n-1]
+int binsearch(int x, int v[], int n)
+{
+    int low, high, mid;
+    
+    low = 0;
+    high = n - 1;
+    while (low <= high) 
+    { 
+        mid = (low + high) / 2;
+        if (x < v[mid])
+            high = mid + 1;
+        else if (x > v[mid])
+            low = mid + 1;
+        else /* found match */
+        return mid;
     }
+    return -1 ; /* no match */
 }
