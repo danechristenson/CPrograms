@@ -1,25 +1,33 @@
 #include <stdio.h>
-               
-main()
-{
-    
-}
 
-
-    // binsearch: find x in v[0] <= v[1] <= ... <= v[n-1]
-int binsearch(int x, int v[], int n)
+int main() /* count digits, whitepace, others */
 {
-    int low, high, mid;
+    int c, i, nwhite, nother, ndigit[10];
     
-    low = 0;
-    high = n - 1;
-    while (low < high) 
-    { 
-        mid = (low + high) / 2;
-        if (x <= v[mid])
-            high = mid;
-        else
-            low = mid + 1;
+    nwhite = nother = 0;
+    for( i = 0; i < 10; i++)
+        ndigit[i] = 0;
+    
+    while ((c = getchar()) != '0' ) 
+    {
+        switch (c) {
+            case '0' : case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9':
+            ndigit[c - '0']++;
+            break;
+            case ' ':
+            case '\n':
+            case '\t':
+            nwhite++;
+            break;
+            
+            default:
+            nother++;
+            break;
+        }
     }
-    return (x == v[low]) ? low :  -1 ; /* no match */
+    printf("digits = ");
+    for (i = 0; i < 10; i++)
+        printf("%d", ndigit[i]);
+    printf(", white space = %d, other = %d\n", nwhite, nother);
+    return 0;
 }
