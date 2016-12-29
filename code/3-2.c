@@ -1,14 +1,10 @@
 #include <stdio.h>
 
-void escape(char s[], char t[]);
+void escape(s[], t[]);
 
 int main() /* count digits, whitepace, others */
 {
     int c, i, nwhite, nother, ndigit[10];
-    char t[255];
-    
-    char s[254] = "This is the song that comes after the credits\n";
-    
     
     nwhite = nother = 0;
     for( i = 0; i < 10; i++)
@@ -35,17 +31,8 @@ int main() /* count digits, whitepace, others */
     for (i = 0; i < 10; i++)
         printf("%d", ndigit[i]);
     printf(", white space = %d, other = %d\n", nwhite, nother);
-    
-    
-    escape(char s[], char t[]);
-    for( i = 0; i < sizeof(t)-1; i++)
-    {
-        printf(t[i]);
-    }
-    
     return 0;
 }
-
 
 void escape(s[], t[]) 
 {
