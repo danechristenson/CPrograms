@@ -1,69 +1,53 @@
 #include <stdio.h>
+#include <ctype.h>
+#include <string.h>
 
-void escape(char s[], char t[]);
-
-int main() /* count digits, whitepace, others */
+/* atoi: convert s to interger; v2 */
+int atoi(char s[])
 {
-    int c, i, nwhite, nother, ndigit[10];
-    char t[255];
+    int i, n, sign;
     
-    char s[254] = "This is the song that comes after the credits\n";
+    for(i = 0;isspace(s[i]); i++) /* skip white space */
+    ;
+    sign = (s[i] == '-') ? -1:1;
+    if(s[i] == '+' || s[i] == '-') /* skip sign */
+    i++;
     
-    
-    nwhite = nother = 0;
-    for( i = 0; i < 10; i++)
-        ndigit[i] = 0;
-    
-    while ((c = getchar()) != '0' ) 
-    {
-        switch (c) {
-            case '0' : case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9':
-            ndigit[c - '0']++;
-            break;
-            case ' ':
-            case '\n':
-            case '\t':
-            nwhite++;
-            break;
-            
-            default:
-            nother++;
-            break;
-        }
-    }
-    printf("digits = ");
-    for (i = 0; i < 10; i++)
-        printf("%d", ndigit[i]);
-    printf(", white space = %d, other = %d\n", nwhite, nother);
-    
-    
-    escape(char s[], char t[]);
-    for( i = 0; i < sizeof(t)-1; i++)
-    {
-        printf(t[i]);
-    }
-    
-    return 0;
+    for (n = 0; isdigit(s[i]); i++)
+        n = 10 * n + (s[i] - '0');
+    return sign * n;
 }
 
-
-void escape(s[], t[]) 
+// shellsort: sort v[0] ... v[n-1] into increasing order
+void shellsort(int v[], int n) 
 {
-    int i, j;
+    int gap, i, j, temp;
     
-    for(i = 0; i < sizeof(s) - 1; i++)
+    for (gap = n/2; gap > 0; gap /= 2)
     {
-        switch (s[i]) {
-            case '\n':
-            t[j++] ='\\';
-            t[j++] = 'n';
-            break;
-            case '\t':
-            t[j++] ='\\';
-            t[j++] = 't';
-            
-            default:
-            t[j++] = s[i]
+        
+        for(i = gap; i < n; i ++)
+        {
+            for (j = i - gap; j >= 0 && v[j] > v[j+gap]; j -= gap) 
+            {
+                temp = v[j];
+                v[j] = v[j+gap];
+                v[j+gap] = temp;
+            }
         }
     }
 }
+
+// reverse: reverse string s in place
+void reverse(char s[])
+{
+    int c, i , j;
+    
+    for ( i = 0, j = strlen(s)-1; i < j; i++, j--) 
+    {
+        c = s[i];
+        s[i] = s[j];
+        s[j] = c;
+    }
+}
+
