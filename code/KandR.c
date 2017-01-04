@@ -38,10 +38,10 @@ int getline2(char s[], int lim)
     return i;
 }
 
-//strindex: return index of t in s, -1 if none
+//strindex: return rightmost index of t in s, -1 if none
 int strindex(char s[], char t[])
 {
-    int i, j, k;
+    int i, j, k, found = -1;
     
     for( i = 0; s[i] != '\0'; i++)
     { 
@@ -49,8 +49,8 @@ int strindex(char s[], char t[])
         {
             ;
         }
-        if (k > 0 && t[k] == '\0')
-            return i;
+        if (k >  0 && t[k] == '\0')
+            found = i;
     }
-    return -1;
+    return found;
     }
